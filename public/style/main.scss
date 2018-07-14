@@ -454,7 +454,9 @@ hr {
 .above-game {
   @include clearfix;
 }
-
+.above-game-tools {
+  @include clearfix;
+}
 .game-intro {
   float: left;
   line-height: 42px;
@@ -462,6 +464,12 @@ hr {
 }
 
 .restart-button {
+  @include button;
+  display: block;
+  text-align: center;
+  float: right;
+}
+.ai-button {
   @include button;
   display: block;
   text-align: center;
@@ -519,6 +527,13 @@ hr {
   }
 
   .restart-button {
+    width: 42%;
+    padding: 0;
+    display: block;
+    box-sizing: border-box;
+    margin-top: 2px;
+  }
+  .ai-button {
     width: 42%;
     padding: 0;
     display: block;
